@@ -62,7 +62,7 @@ sudo systemctl status apache2
 #### 4. Gestion des Logs
    - **/var/log/apache2/** : Logs d'Apache, utiles pour le débogage et la surveillance
 
-### Exemple de Configuration de Site Web (site1.conf)
+## Exemple de Configuration de Site Web (site1.conf)
 Pour placer cette configuration dans Apache, vous devez suivre ces étapes :
 
 #### Étape 1 : Créer le Fichier de Configuration pour l'Hôte Virtuel
@@ -101,11 +101,11 @@ Pour placer cette configuration dans Apache, vous devez suivre ces étapes :
 sudo systemctl restart apache2
 ```
 
-Maintenant, votre configuration d'hôte virtuel pour `example.com` est activée. Les fichiers de ce site devraient être placés dans le répertoire `/var/www/html/example`. Assurez-vous de créer ce répertoire si nécessaire et de placer vos fichiers web à l'intérieur.
+1. Maintenant, votre configuration d'hôte virtuel pour `example.com` est activée. Les fichiers de ce site devraient être placés dans le répertoire `/var/www/html/example`. Assurez-vous de créer ce répertoire si nécessaire et de placer vos fichiers web à l'intérieur.
 
-Assurez-vous également que le domaine `example.com` est configuré pour pointer vers l'adresse IP de votre serveur Apache.
+2. Assurez-vous également que le domaine `example.com` est configuré pour pointer vers l'adresse IP de votre serveur Apache.
 
-Cette méthode vous permet de définir plusieurs sites web sur un seul serveur Apache en utilisant des hôtes virtuels. Vous pouvez répéter le processus pour chaque site que vous souhaitez héberger sur votre serveur Apache.
+3. Cette méthode vous permet de définir plusieurs sites web sur un seul serveur Apache en utilisant des hôtes virtuels. Vous pouvez répéter le processus pour chaque site que vous souhaitez héberger sur votre serveur Apache.
 ---
 
 ### Sécurisation d'Apache
